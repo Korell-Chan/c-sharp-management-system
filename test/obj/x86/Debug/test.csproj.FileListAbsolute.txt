@@ -1,0 +1,7 @@
+E:\C#\test\test\bin\Debug\test.exe
+E:\C#\test\test\bin\Debug\test.pdb
+E:\C#\test\test\obj\x86\Debug\test.login.resources
+E:\C#\test\test\obj\x86\Debug\test.Properties.Resources.resources
+E:\C#\test\test\obj\x86\Debug\test.csproj.GenerateResource.Cache
+E:\C#\test\test\obj\x86\Debug\test.exe
+E:\C#\test\test\obj\x86\Debug\test.pdb
