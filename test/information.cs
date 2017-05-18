@@ -9,24 +9,18 @@ using System.Windows.Forms;
 
 namespace test
 {
-    public partial class Signup : Form
+    public partial class information : Form
     {
-        public Signup()
+        public information()
         {
             InitializeComponent();
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-           
-
-        }
-
-        private void button2_Click(object sender, EventArgs e)
-        {
+            Main main = new Main();
             this.Hide();
-            login log = new login();
-            log.Show();
+            main.Show();
         }
     }
 }
