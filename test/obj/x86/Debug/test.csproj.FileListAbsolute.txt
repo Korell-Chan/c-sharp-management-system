@@ -12,3 +12,4 @@ E:\C#\test\test\obj\x86\Debug\test.car.resources
 E:\C#\test\test\obj\x86\Debug\test.information.resources
 E:\C#\test\test\obj\x86\Debug\test.parts.resources
 E:\C#\test\test\obj\x86\Debug\test.service.resources
+E:\C#\test\test\bin\Debug\test.exe.config
