@@ -62,8 +62,9 @@
             this.label1.ForeColor = System.Drawing.Color.OrangeRed;
             this.label1.Location = new System.Drawing.Point(29, 21);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(0, 33);
+            this.label1.Size = new System.Drawing.Size(95, 33);
             this.label1.TabIndex = 0;
+            this.label1.Text = "label";
             // 
             // monthCalendar1
             // 
@@ -239,6 +240,7 @@
             this.Name = "Main";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Main";
+            this.Load += new System.EventHandler(this.Main_Load);
             this.groupBox1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.groupBox2.ResumeLayout(false);

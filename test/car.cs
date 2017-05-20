@@ -22,6 +22,7 @@ namespace test
         private void button1_Click(object sender, EventArgs e)
         {
             Main main = new Main();
+            main.user = username;
             this.Hide();
             main.Show();
         }
@@ -37,6 +38,7 @@ namespace test
             cmd.ExecuteNonQuery();
             conn.Close();
             Main main = new Main();
+            main.user = username;
             this.Hide();
             main.Show();
         }
@@ -47,11 +49,12 @@ namespace test
             conn.ConnectionString = ConfigurationManager.ConnectionStrings["connstr"].ConnectionString;
             conn.Open();
             string t = DateTime.Now.ToString();
-            string sql = "insert into dbo.event(username,time,event,type,flag) values('" + username + "''," + t + "','LykanHypersport','car','已预购')";
+            string sql = "insert into dbo.event(username,time,event,type,flag) values('" + username + "','" + t + "','LykanHypersport','car','已预购')";
             SqlCommand cmd = new SqlCommand(sql, conn);
             cmd.ExecuteNonQuery();
             conn.Close();
             Main main = new Main();
+            main.user = username;
             this.Hide();
             main.Show();
         }
@@ -67,6 +70,7 @@ namespace test
             cmd.ExecuteNonQuery();
             conn.Close();
             Main main = new Main();
+            main.user = username;
             this.Hide();
             main.Show();
         }
@@ -82,6 +86,7 @@ namespace test
             cmd.ExecuteNonQuery();
             conn.Close();
             Main main = new Main();
+            main.user = username;
             this.Hide();
             main.Show();
         }

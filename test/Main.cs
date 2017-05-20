@@ -12,6 +12,7 @@ namespace test
     public partial class Main : Form
     {
         public string user;
+        string u;
         public Main()
         {
             InitializeComponent();
@@ -24,7 +25,7 @@ namespace test
             {
                 Console.WriteLine("{0}first exception", e.Message);
             }*/
-            label1.Text = "Hello," + user;
+            
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -54,6 +55,7 @@ namespace test
         private void pictureBox3_Click(object sender, EventArgs e)
         {
             service s = new service();
+            s.username = user;
             this.Hide();
             s.Show();
         }
@@ -74,6 +76,12 @@ namespace test
                 cp.ExStyle |= 0x02000000;
                 return cp;
             }
+        }
+
+        private void Main_Load(object sender, EventArgs e)
+        {
+            u = "Hello," + user;
+            this.label1.Text = u;
         }
 
         
